@@ -1,13 +1,16 @@
+// const getUsersWithFriend = (users, friendName) => {
+//   const res = [];
+//   for (const user of users) {
+//     const { _, friends } = user;
+//     // console.log(name, friends);
+//     if (friends.includes(friendName)) {
+//       res.push(user);
+//     }
+//   }
+//   return res;
+// };
 const getUsersWithFriend = (users, friendName) => {
-  const res = [];
-  for (const user of users) {
-    const { _, friends } = user;
-    // console.log(name, friends);
-    if (friends.includes(friendName)) {
-      res.push(user);
-    }
-  }
-  return res;
+  return users.filter((user) => user.friends.includes(friendName));
 };
 
 const allUsers = [

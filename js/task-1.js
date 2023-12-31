@@ -1,9 +1,12 @@
+// const getUserNames = (users) => {
+//   const res = [];
+//   for (const user of users) {
+//     res.push(user.name);
+//   }
+//   return res;
+// };
 const getUserNames = (users) => {
-  const res = [];
-  for (const user of users) {
-    res.push(user.name);
-  }
-  return res;
+  return users.map((user) => user.name);
 };
 
 console.log(
